@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScootRent - Reservation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Scooter Reservation</h1>
+        <form id="reservation-form">
+            <label for="scooter-id">Scooter ID:</label>
+            <input type="text" id="scooter-id" name="scooter-id" readonly>
+
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start-date" required>
+
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="end-date" required>
+
+            <button type="submit">Reserve</button>
+        </form>
+        <div id="confirmation-message" style="display: none;">
+            <h2>Reservation Confirmed!</h2>
+            <p>Your scooter has been reserved.</p>
+            <p>
+                <a href="http://www.csac.ro/" target="_blank">www.csac.ro</a><br>
+                <a href="https://scanstart.ro/" target="_blank">https://scanstart.ro/</a><br>
+                <a href="https://graffino.com/" target="_blank">https://graffino.com/</a>
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
