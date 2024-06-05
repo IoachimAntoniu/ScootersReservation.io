@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function fetchScooterData(city) {
-    const url = `http://api.citybik.es/v2/networks?fields=id,name,location`;
+    const url = `https://api.citybik.es/v2/networks?fields=id,name,location`;
 
     fetch(url)
         .then(response => response.json())
@@ -74,7 +74,7 @@ function fetchScooterData(city) {
 }
 
 function fetchScootersInNetwork(networkId) {
-    const url = `http://api.citybik.es/v2/networks/${networkId}`;
+    const url = `https://api.citybik.es/v2/networks/${networkId}`;
 
     fetch(url)
         .then(response => response.json())
